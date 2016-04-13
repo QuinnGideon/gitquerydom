@@ -43,7 +43,7 @@ function rightFormat(){
 
 function submitCheck(){
 	$('form').submit(function(){
-	alert("I've been clicked")
+	//alert("I've been clicked")
 	if (dateSplit() === true && rightFormat() ===true && passCheck()===true){
 		alert('logging in soon')
 	} else if (passCheck()===false){
@@ -58,7 +58,7 @@ function submitCheck(){
 
 	})
 }
-
+submitCheck()
 })
 
 
