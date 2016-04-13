@@ -1,0 +1,38 @@
+$(document).ready() // This is how to start a jQuery JS file
+
+document.getElementById('username'); // How to get input contents of a form in JS
+$('#username').val();  // How to get input contents of a form in jQuery
+
+
+
+<h1 id="heading">Old Heading</h1> //Example
+
+document.getElementById('heading').innerText = "This is my new heading" // How to change text for 'heading' tag in JS
+
+$('#heading').text() // This would show "Old Heading"
+var message= "This is my new "
+$('#heading').text("message" + "heading") // How to change text in jQuery
+$('h1').text("message" + "heading")  // How to change text in jQuery
+
+$('#heading').html()  // Changes the contents of the HTML tags, like innerHTML would in JS
+
+<div class="main-section"> <h1>Hello World</h1> </div>  //Example
+$(".main-section").html("<h3>Hello World Smaller</h3>") //With jQuery change
+
+
+
+<h1>First Header</h1> <h1>Second Header</h1> // Example of 2 of the same elements
+$("h1").first() // This gets the first element... last() gets the last
+
+<h1>First Header</h1><h1>Second Header</h1><h1>Third Header</h1> // Example of more than 2 of the same elements
+var secondHeader = $("h1")[1]; // Selecting the 2nd header in an array fashion
+$(secondHeader).text("New Text"); // Changing that item
+====OR====
+$($("h1")[1]) // Simplified
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js">  // jQuery script tag
+
+
+$(document).ready() // Code doesn't run until a ready event is fired. It // only fires after all DOM elements are loaded
+
