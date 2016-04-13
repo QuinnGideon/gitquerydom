@@ -42,7 +42,7 @@ function rightFormat(){
 
 
 function submitCheck(){
-	$('#submit').value.submit()
+	$('form').submit(function(){
 	alert("I've been clicked")
 	if (dateSplit() === true && rightFormat() ===true && passCheck()===true){
 		alert('logging in soon')
@@ -55,6 +55,11 @@ function submitCheck(){
 	} else {
 		alert ("one or more inputs is incorrect, please try again!")
 	}
-};
 
-});
+	})
+}
+
+})
+
+
+
